@@ -83,21 +83,23 @@ triangulo()
 
 function caixa() {
   linhas = 10;
-  colunas = 5;
   asteriscos = "";
-  for (i = 0; i <= linhas - 1; i++) {
+  for (i = 1; i <= linhas; i++) {
     asteriscos = "";
-    for (l = 0; l <= colunas - 1; l++) {
-      asteriscos += "*";
-      if(i == 1 || i == 10){
+    for (l = 1; l <= linhas; l++) {
+      if (i == 1 || i == 10) {
         asteriscos += "*";
-      }else{
-        if(i == 2 || i == 9){
+      }
+      else {
+        if (l == 1 || l == 10) {
+          asteriscos += "*";
+        }
+        else {
           asteriscos += " ";
+        }
       }
     }
     console.log(asteriscos)
   }
-}
 }
 caixa()
