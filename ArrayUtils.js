@@ -69,13 +69,14 @@ arrayUtils = {
         return array
     },
     contains: function(array, value) {
-        conta = 0
-        for (var i = 0; i <= value.length; i++) {
-            if (value == array[i]) {
+        var conta = 0;
+        for (var i = 0; i <= array.length; i++) {
+            if (array[i] === value) {
                 return true
+            } else {
+                return false
             }
         }
-        return conta
     }
 };
 module.exports = arrayUtils

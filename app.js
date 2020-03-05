@@ -33,4 +33,4 @@ console.log(ArrayUtilsModule.isSameLength([1, 2, 3, 4], [1, 2, 3, 4, 5, 6, 7]));
 console.log(ArrayUtilsModule.isSameLength([1, 2, 3, 4], [1, 2, 3, 4]));
 console.log(ArrayUtilsModule.reverse([1, 2, 3, 4]));
 console.log(ArrayUtilsModule.swap([1, 2, 3, 4], 1, 2));
-console.log(ArrayUtilsModule.contains([1, 2, 3, 4], 1));
+console.log(ArrayUtilsModule.contains([1, 2, 3, 4], 2));
